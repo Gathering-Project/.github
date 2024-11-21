@@ -181,9 +181,7 @@ CPU 사용량이 95%에 도달하며 서버 장애 위험이 매우 높다는 �
 
 </details>
 
-##  📑 API 명세서
-
-### [Swagger API 바로가기]()
+##  📑 API 명세서 ([Swagger API 바로가기]())
 
 <details>
   <summary> 🔖 API 명세 펼쳐보기</summary>
