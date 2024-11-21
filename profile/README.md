@@ -15,129 +15,177 @@ OTTERMEET 🦦
 
 <br>
 
-## 🛠️ 기술 스택
-### Backend
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=Spring&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring%20JPA-6DB33F?style=for-the-badge&logo=Spring&logoColor=white)
-![Spring](https://img.shields.io/badge/springsecurity-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
-![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
-![Kafka](https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=Apache-Kafka&logoColor=white)
-![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
-![Redisson](https://img.shields.io/badge/Redisson-FFA500?style=for-the-badge)
-![Redis Rate Limiter](https://img.shields.io/badge/Redis%20Rate%20Limiter-DC382D?style=for-the-badge&logo=Redis&logoColor=white)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSocket-000000?style=for-the-badge&logo=websocket&logoColor=white)
-![OAuth 2.0](https://img.shields.io/badge/OAuth%202.0-3C8DBC?style=for-the-badge&logo=oauth&logoColor=white)
-![STOMP](https://img.shields.io/badge/STOMP-7952B3?style=for-the-badge&logo=stomp&logoColor=white)
-
-### Databases
-![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-
-
-### DevOps
-
-![EC2](https://img.shields.io/badge/amazonec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
-![AWS S3](https://img.shields.io/badge/AWS%20S3-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![AmazonRds](https://img.shields.io/badge/amazonrds-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![ECR](https://img.shields.io/badge/Amazon%20ECR-FF9900?style=for-the-badge&logo=Amazon-AWS&logoColor=white)
-
-[//]: # (![Jenkins]&#40;	https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white&#41;)
+## 🏅 프로젝트 핵심 목표
+1. 실시간 매칭을 통한 1:1 채팅 서비스 제공
+   - RabbitMQ와 WebSocket-STOMP를 활용해 사용자 간 실시간 매칭과 안정적인 1:1 채팅 서비스를 제공
+   - 매칭 성공 시 즉시 채팅방을 생성하며 빠르고 효율적인 커뮤니케이션 환경을 구축
+3. 검색 고도화 및 성능 최적화
+   - ElasticSearch와 Nori 형태소 분석기를 활용해 대규모 데이터에서도 빠르고 정확한 검색 서비스 제공 
+   - 소모임 제목, 지역 기반 복합 검색과 연관 키워드 추천 기능을 통해 사용자 만족도 향상
+4. 실시간 알림 시스템 구현
+   - RabbitMQ와 WebSocket 기반 알림 시스템을 구축하여 사용자 맞춤형 알림 제공
+   - 참가 신청 승인, 새로운 이벤트 생성 등의 주요 활동에 대한 알림을 실시간으로 전달
+5. 위치 기반 사용자 경험 강화
+   - Geocoding API와 Places API를 활용하여 사용자의 관심 지역에 맞는 장소 추천 서비스를 제공
+   - Redis 캐싱으로 반복 요청 처리 성능을 최적화하여 사용자 경험을 향상
+6. 동시성 문제 해결 및 안정적 데이터 관리
+   - Redis 기반 Redisson 분산락을 활용하여 다중 요청 처리 중 데이터 무결성을 보장
+   - 동시성 문제로 인한 충돌 방지와 성능 최적화를 통해 안정적인 이벤트 참가 시스템 구축
+7. 운영 효율성 및 서비스 안정성 강화
+   - Docker와 GitHub Actions 기반 CI/CD 파이프라인으로 배포 자동화 및 운영 호율성 극대화
+   - Prometheus와 Grafana를 활용한 실시간 모니터링으로 시스템 성능과 안정성 확보
 
 
-### Monitoring
-[![Elasticsearch](https://img.shields.io/badge/elasticsearch-005571.svg?style=for-the-badge&logo=elasticsearch&logoColor=white)](https://www.elastic.co/elasticsearch/)
-[![Kibana](https://img.shields.io/badge/kibana-005571.svg?style=for-the-badge&logo=kibana&logoColor=white)](https://www.elastic.co/kibana/)
-[![Grafana](https://img.shields.io/badge/grafana-F46800.svg?style=for-the-badge&logo=grafana&logoColor=white)](https://grafana.com/)
-![Prometheus](https://img.shields.io/badge/prometheus-E6522C.svg?style=for-the-badge&logo=prometheus&logoColor=white)
+## 🗝️ KEY SUMMARY
 
-### Tools
-![JUnit5](https://img.shields.io/badge/JUnit5-FB4F14?style=for-the-badge&logo=JUnit5&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
-![Git](https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Jmeter](https://img.shields.io/badge/apachejmeter-D22128?style=for-the-badge&logo=apachejmeter&logoColor=white)
-![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)
-![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
-![Google Places API](https://img.shields.io/badge/Google%20Places-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![Geocoding](https://img.shields.io/badge/Geocoding-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white)
-![Toss Payments](https://img.shields.io/badge/Toss%20Payments-0077FF?style=for-the-badge&logo=toss&logoColor=white)
+### 🍁 **트러블 슈팅 : 매칭 서비스 트래픽 폭증에 따른 서버 과부하 문제**
+### 1. 문제 상황
+- [x] 매칭 서비스는 사용자 트래픽 폭증 상황에서도 안정적으로 작동해야 했습니다. 
+- [x] 초당 1000명의 사용자가 몰리는 상황을 가정해 부하 테스트를 진행한 결과, <br>
+CPU 사용량이 95%에 도달하며 서버 장애 위험이 매우 높다는 문제가 확인되었습니다.<br>
+　<br>
+![개선 전 CPU](/profile/assets/troubleshooting/매칭/매칭트러블1.png)  
 
-## 🗯️ 주요 기능
+### 2. 문제 원인
+  - 매칭 로직이 메인 서버에서 모두 처리되면서 과도한 부하 발생
+  - 대량의 매칭 요청이 서버에 집중되며 CPU 사용량이 급증
 
-* **안전한 사용자 인증**
+### 3. 해결 방안
+- [x] 매칭 서버 분리
+  -기존 메인 서버에서 매칭 로직을 제거하고 매칭 전용 서버를 분리하여 로직 처리
+  - 메인 서버는 매칭 요청을 수신해 매칭 서버로 데이터를 전달하는 역할로 단순화
+  - 매칭 서버는 매칭 처리에만 집중하여 부하를 분산
+- [x] 테스트 및 결과 분석
+  - 매칭 서버 분리 후 동일한 조건에서 부하 테스트를 재실행
+  - CPU 사용량이 94.8%에서 50.4%로 감소하며 46.86%의 부하 감소 효과를 확인.<br>
+  　 <br>
+  ![개선 후 CPU](/profile/assets/troubleshooting/매칭/매칭트러블1-2.png) 
 
-    - [x] JWT와 Spring Security 사용자 인증 및 권한 관리
-    - [x] OAuth 2.0 소셜 계정을 통한 간편 로그인 기능 제공
+### 4. 개선 결과
+- 메인 서버의 부하가 크게 감소해 장애 위험이 줄어듦
+- 매칭 로직 처리 속도가 안정적으로 유지되며 사용자 경험이 향상됨
 
-* **소모임과 이벤트 관리**
+| **조건**         | **테스트 전 CPU 사용량** | **테스트 후 CPU 사용량** | **개선율**       |
+|------------------|-------------------------|-------------------------|-----------------|
+| 초당 1000명 요청 | 94.8%                  | 50.4%                  | **46.86% 감소** |
 
-    - [x] 소모임 생성 및 관리: 사용자 주도로 소모임을 생성하고, 필요한 정보 수정 및 관리 기능 제공
-    - [x] 소모임 참가 승인 시스템 :  관리자의 승인/거절을 통해 효율적인 참여 관리 지원
-    - [x] 이벤트 관리 : 소모임 내 일정을 소모임 멤버가 관리하고 참가할 수 있음
-    - [x] 실시간 알림: 신청 및 승인 상태를 즉시 알림으로 전달하여 신속한 소통 가능
-
-* **매칭 서비스**
-
-    - [x] 관심사 및 위치 기반 매칭: 공통 관심사나 위치를 통해 사용자 간 자동 매칭을 지원하여 참여 기회 제공
-    - [x] 메세지 큐를 활용해 안정적인 비동기 매칭 서비스 구현
-
-* **1:1 실시간 채팅**
-
-    - [x] 사용자 매칭 시 1대1 채팅이 지원
-    - [x] WebSocket-STOMP 프로토콜을 활용하여 실시간 메시지 송수신을 통해 원활한 소통 지원
-    - [x] QOS 메세지 처리의 안정성 보장, 메세지 전송 속도 제한, 메세지 손실 최소화
-    - [x] 비동기처리: 작업 병렬화와 리소스 효율성, 처리 속도 개선
-
-* **실시간 알림 시스템**
-
-    - [x] Message Broker : 참가 신청 승인, 새로운 이벤트 등 주요 활동에 대한 실시간 알림 제공
-    - [x] 사용자 맞춤형 주요 소식을 놓치지 않도록 지원
-
-* **위치 기반 장소 추천 서비스**
-
-    - [x] Geocoding API를 활용하여 사용자의 입력 주소를 기반으로 정확한 좌표 정보 제공
-    - [x] Places API를 통해 사용자의 현재 위치 또는 입력된 좌표를 중심으로 주변 장소 추천
-    - [x] 사용자 선호도와 반경, 장소 유형을 고려한 맞춤형 추천 결과 제공
-    - [x] Redis를 활용하여 위치 정보와 추천 결과를 캐싱, 반복 요청 시 빠른 응답 제공
-
-* **검색 기능 및 인덱싱 최적화**
-
-    - [x] 소모임 제목과 지역을 기준으로 소모임을 신속하게 검색할 수 있는 기능 제공
-    - [x] 대규모 데이터에서 빠른 검색 결과 반환을 위한 인덱싱 최적화
-
-* **ElasticSearch 기반 검색 기능 및 최적화**
-    
-    - [x] ElasticSearch의 역색인 구조를 활용해 대규모 데이터에서도 빠른 응답 시간 제공
-    - [x] 로그 데이터에서 키워드 기반 검색, 특정 문구를 포함하는 데이터 찾기를 제공
-    - [x] 고급 텍스트 검색: 소모임 제목과 지역을 포함한 전체 텍스트 검색 기능 제공
-
-* **광고 및 결제 시스템**
-
-    - [x] 소모임 배너 노출 일자별 광고 서비스 제공
-    - [x] Spring Scheduler를 활용해 광고 상태 기반 관리 자동 갱신
-    - [x] Toss Payments API를 활용한 결제 관리
-    - [x] Redis를 활용한 멱등성 키 관리로 중복 요청 방지
-    - [x] Spring Scheduler로 결제 타임아웃 자동 처리
-
-* **동시성 제한 및 캐싱 관리**
-
-    - [x] 동시성 제어 : Redisson 분산 락을 통해 동시 참가 제한을 관리하여 안정적인 참여 환경 제공
-    - [x] 캐싱 ; Redis 캐싱을 통해 목록 조회 및 데이터 로딩 속도 최적화
-    - [x] Rate Limiting: Redis Rate Limiter로 사용자 요청 속도 제어하여 서비스 안정성 유지
-
-* **모니터링**
-    - [x] ELK 실시간 로그 모니터링 기능 구현
-    - [x] Grafana와 Prometheus를 통해 실시간 모니터링과 통계 제공
 
 <br>
 
+### 🍁 **핵심 성능 개선 : 매칭 서비스 비동기 처리 도입**
+
+- [x] 매칭 서비스의 효율적인 운영을 위해 **RabbitMQ를 활용한 비동기 처리 방식**을 도입
+- [x] 기존의 동기적 처리에서 발생한 성능 병목을 해결하고 요청 처리량을 대폭 향상시킴
+
+### 1. 성능 개선 목표
+
+1. **매칭 요청 처리량 증대**
+   - 기존 동기 처리 방식에서 초당 요청 처리량이 낮아 성능 병목 현상이 발생
+   - 비동기 처리 방식을 통해 요청 처리 속도를 최적화
+
+2. **서버 부하 감소**
+   - 메인 서버의 매칭 로직을 메시지 큐로 분리하여 부하를 분산
+   - 고부하 상황에서도 안정적인 응답 시간을 유지
+
+
+### 2. 적용 내용
+
+1. **RabbitMQ 도입:**
+   - 기존 동기식 API 호출 방식을 비동기 메시지 처리 방식으로 전환
+   - 메인 서버는 요청 데이터를 RabbitMQ 큐에 전달, 매칭 서버는 큐의 메시지를 비동기로 소비하여 매칭 로직 실행
+
+2. **비동기 환경 구축:**
+   - 서버 간의 병렬 작업을 강화하여 요청 처리량 최적화
+   - 메인 서버와 매칭 서버의 역할을 명확히 분리하여 부하 관리 용이
+
+### 3. 개선 결과
+
+- **처리량 향상**
+  - 기존 동기 방식에서는 요청 처리량이 **초당 54.7ops/s**에 불과했으나, 비동기 방식을 도입한 후 **181ops/s**로 처리량이 **3.31배** 증가
+
+| **조건**         | **기존 요청 처리량**       | **개선 후 요청 처리량**      | **개선율**       | **테스트 전**                                                                                         | **테스트 후**                                                    |
+|------------------|---------------------------|-----------------------------|------------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| 초당 1000명 요청 | **54.7ops/s**             | **181ops/s**                | **3.31배 증가**  | ![개선 후 CPU](/profile/assets/troubleshooting/매칭/매칭트러블2.png)  | ![개선 후 CPU](/profile/assets/troubleshooting/매칭/매칭트러블2-2.png) |
+
+- **시스템 안정성 향상**
+  - 메시지 큐를 통한 비동기 처리로 요청 간 병목 현상을 해소하고, 메인 서버의 부하를 대폭 줄여 고부하 상황에서도 안정적인 성능 유지
+
+```
+비동기 처리 도입을 통해 처리량을 극대화하고, 안정적이고 확장 가능한 매칭 서비스를 구축함
+```
+<br>
+
+## 🖥️ 인프라 아키텍처 & 적용기술
+![infra](/profile/assets/인프라1121.png)
+
+      - 위 아키텍처는 모놀리틱(Monolithic) 기반의 서비스 구조를 AWS 환경에서의 구조를 나타냅니다. 
+      - 서비스는 Redis, RabbitMQ를 통해 통신하며, Docker로 컨테이너화되어 GitHub Actions 기반 CI/CD를 통해 자동 배포됩니다.
+
+<br>
+
+<details>
+<summary><span style="font-size:1.4em"><strong> 🛠️ 기술 스택 </strong></span></summary>
+
+  ### Backend
+  ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+  ![Spring](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=Spring&logoColor=white)
+  ![Spring](https://img.shields.io/badge/Spring%20JPA-6DB33F?style=for-the-badge&logo=Spring&logoColor=white)
+  ![Spring](https://img.shields.io/badge/springsecurity-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
+  ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+  ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
+  ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=Apache-Kafka&logoColor=white)
+  ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
+  ![Redisson](https://img.shields.io/badge/Redisson-FFA500?style=for-the-badge)
+  ![Redis Rate Limiter](https://img.shields.io/badge/Redis%20Rate%20Limiter-DC382D?style=for-the-badge&logo=Redis&logoColor=white)
+  ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
+  ![WebSocket](https://img.shields.io/badge/WebSocket-000000?style=for-the-badge&logo=websocket&logoColor=white)
+  ![OAuth 2.0](https://img.shields.io/badge/OAuth%202.0-3C8DBC?style=for-the-badge&logo=oauth&logoColor=white)
+  ![STOMP](https://img.shields.io/badge/STOMP-7952B3?style=for-the-badge&logo=stomp&logoColor=white)
+
+  ### Databases
+  ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+  ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+  
+  
+  ### DevOps
+  
+  ![EC2](https://img.shields.io/badge/amazonec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
+  ![AWS S3](https://img.shields.io/badge/AWS%20S3-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+  ![Docker](https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+  ![AmazonRds](https://img.shields.io/badge/amazonrds-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white)
+  ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+  ![ECR](https://img.shields.io/badge/Amazon%20ECR-FF9900?style=for-the-badge&logo=Amazon-AWS&logoColor=white)
+  
+  [//]: # (![Jenkins]&#40;	https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=Jenkins&logoColor=white&#41;)
+  
+
+### Monitoring
+  [![Elasticsearch](https://img.shields.io/badge/elasticsearch-005571.svg?style=for-the-badge&logo=elasticsearch&logoColor=white)](https://www.elastic.co/elasticsearch/)
+  [![Kibana](https://img.shields.io/badge/kibana-005571.svg?style=for-the-badge&logo=kibana&logoColor=white)](https://www.elastic.co/kibana/)
+  [![Grafana](https://img.shields.io/badge/grafana-F46800.svg?style=for-the-badge&logo=grafana&logoColor=white)](https://grafana.com/)
+  ![Prometheus](https://img.shields.io/badge/prometheus-E6522C.svg?style=for-the-badge&logo=prometheus&logoColor=white)
+
+### Tools
+  ![JUnit5](https://img.shields.io/badge/JUnit5-FB4F14?style=for-the-badge&logo=JUnit5&logoColor=white)
+  ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+  ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
+  ![Git](https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white)
+  ![Jmeter](https://img.shields.io/badge/apachejmeter-D22128?style=for-the-badge&logo=apachejmeter&logoColor=white)
+  ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)
+  ![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
+  ![Google Places API](https://img.shields.io/badge/Google%20Places-4285F4?style=for-the-badge&logo=google&logoColor=white)
+  ![Geocoding](https://img.shields.io/badge/Geocoding-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white)
+  ![Toss Payments](https://img.shields.io/badge/Toss%20Payments-0077FF?style=for-the-badge&logo=toss&logoColor=white)
+
+</details>
+
 ## 📑 API 명세서
+
 ### [Swagger API 바로가기]()
+
+<details>
+  <summary><span style="font-size:1.5em"><strong>API 명세</strong></span></summary>
+
 
 <details>
   <summary><span style="font-size:1.2em"><strong>유저</strong></span></summary>
@@ -238,26 +286,82 @@ OTTERMEET 🦦
 
 </details>
 
+</details>
 
 <br>
 
-## 🎨 와이어프레임
-![와이어프레임](/profile/assets/와이어프레임.png)
+<details>
+<summary><span style="font-size:1.4em"><strong> 📦 적용 기술 상세보기 </strong></span></summary>
+
+| **분류**        | **기술**                     | **적용 위치**                                      | **사용 이유**                                                                                       | **특징/구체적 역할**                                                                                     |
+|---------------|------------------------------|---------------------------------------------------|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| 데이터베이스<br> 캐싱 | **MySQL** <br> **(Amazon RDS)** | 메인 데이터베이스                                  | 사용자, 소모임, 이벤트 데이터의 안정적 관리                                                         | 트랜잭션 처리 및 관계형 데이터 모델을 통한 데이터 무결성 보장                                             |
+|               | **MongoDB** <br> **(Amazon RDS)** | 채팅 데이터베이스                                  | 비정형 채팅 데이터 처리와 빠른 읽기/쓰기 성능 제공                                                   | 비정형 데이터의 효율적 저장과 확장성 제공                                                                |
+|               | **AWS ElastiCache** <br> **(Redis)** | 실시간 캐싱 및 동시성 제어                         | 이벤트 참가 동시성 제어를 위한 분산 락 구현, 알림 데이터와 위치 기반 추천 데이터 캐싱                 | 높은 처리 성능과 빠른 응답 속도 제공                                                                     |
+| 메시징 시스템       | **RabbitMQ**                | 매칭 서비스 및 실시간 알림                         | 비동기 메시지 큐를 활용한 서버 간 안정적 데이터 전달, 트래픽 급증 시 서버 부하 분산                   | 매칭 요청을 매칭 서버로 전달, 참가 승인 및 주요 활동에 대한 알림 메시지 처리                              |
+| 인프라 <br> 배포   | **Docker**                  | 모든 서비스 컨테이너화                             | 환경 이식성과 배포 속도 개선                                                                         | 애플리케이션과 관련 서비스를 독립적 컨테이너로 운영해 개발, 테스트, 배포 환경 간 일관성 제공                                                   |
+|               | **Amazon EC2**              | 애플리케이션 서버 및 RabbitMQ, Redis 운영          | 유연한 확장성과 안정적인 성능 제공                                                                   | 필요한 서버 리소스를 탄력적으로 할당 및 확장, 장애 시 빠른 복구 가능                                      |
+|               | **Amazon S3**               | 이미지 및 정적 파일 저장소                         | 대규모 정적 자산 저장과 안정적 파일 제공                                                             | 이미지, 동영상 등 대용량 정적 자산을 안정적으로 저장 및 전달, CDN 연동 가능                                |
+|               | **GitHub Actions**          | CI/CD 자동화 파이프라인                            | 코드 품질 관리 및 테스트 자동화, 빠르고 안정적인 배포 구현                                            | 빌드, 테스트, 배포 과정을 자동화하여 개발 효율성을 증대하고 배포 속도 단축                                |
+| 모니터링 <br> 로깅  | **Prometheus & Grafana**    | 시스템 성능 모니터링                                | 주요 지표(CPU, 메모리, 트래픽 등) 수집 및 시각화, 실시간 대시보드로 장애 탐지 및 대응                  | 실시간 대시보드를 통해 트래픽 폭증, 메모리 누수 등 문제 조기 탐지, 알람 설정을 통해 빠른 대응 가능                                            |
+|               | **Elastic Stack** <br> **(Kibana & Logstash)** | 로그 데이터 수집 및 분석                 | ElasticSearch 기반으로 대규모 로그 데이터를 분석 및 검색, 서비스 로그를 구조화하여 가독성과 분석 효율성 증대 | 서비스 로그를 구조화하여 검색 및 분석 가능, 운영 중 발생한 문제를 빠르게 추적 및 해결                                                        |
+
+</details>
+
+## 🗯️ 주요 기능
+
+* **소모임과 이벤트 관리**
+
+    - [x] 소모임 생성 및 관리: 사용자 주도로 소모임을 생성하고, 필요한 정보 수정 및 관리 기능 제공
+    - [x] 소모임 참가 승인 시스템 :  관리자의 승인/거절을 통해 효율적인 참여 관리 지원
+    - [x] 이벤트 관리 : 소모임 내 일정을 소모임 멤버가 관리하고 참가할 수 있음
+    - [x] 실시간 알림: 신청 및 승인 상태를 즉시 알림으로 전달하여 신속한 소통 가능
+
+* **매칭 서비스**
+
+    - [x] 관심사 및 위치 기반 매칭: 공통 관심사나 위치를 통해 사용자 간 자동 매칭을 지원하여 참여 기회 제공
+    - [x] 메세지 큐를 활용해 안정적인 비동기 매칭 서비스 구현
+
+* **1:1 실시간 채팅**
+
+    - [x] 사용자 매칭 시 1대1 채팅이 지원
+    - [x] WebSocket-STOMP 프로토콜을 활용하여 실시간 메시지 송수신을 통해 원활한 소통 지원
+    - [x] QOS 메세지 처리의 안정성 보장, 메세지 전송 속도 제한, 메세지 손실 최소화
+    - [x] 비동기처리: 작업 병렬화와 리소스 효율성, 처리 속도 개선
+
+* **실시간 알림 시스템**
+
+    - [x] Message Broker : 참가 신청 승인, 새로운 이벤트 등 주요 활동에 대한 실시간 알림 제공
+    - [x] 사용자 맞춤형 주요 소식을 놓치지 않도록 지원
+
+* **위치 기반 장소 추천 서비스**
+
+    - [x] Geocoding API를 활용하여 사용자의 입력 주소를 기반으로 정확한 좌표 정보 제공
+    - [x] Places API를 통해 사용자의 현재 위치 또는 입력된 좌표를 중심으로 주변 장소 추천
+    - [x] 사용자 선호도와 반경, 장소 유형을 고려한 맞춤형 추천 결과 제공
+    - [x] Redis를 활용하여 위치 정보와 추천 결과를 캐싱, 반복 요청 시 빠른 응답 제공
+
+* **광고 및 결제 시스템**
+
+    - [x] 소모임 배너 노출 일자별 광고 서비스 제공
+    - [x] Spring Scheduler를 활용해 광고 상태 기반 관리 자동 갱신
+    - [x] Toss Payments API를 활용한 결제 관리
+    - [x] Redis를 활용한 멱등성 키 관리로 중복 요청 방지
+    - [x] Spring Scheduler로 결제 타임아웃 자동 처리
+  
+* **ElasticSearch 기반 검색 기능**
+    
+    - [x] ElasticSearch의 역색인 구조를 활용해 대규모 데이터에서도 빠른 응답 시간 제공
+    - [x] 로그 데이터에서 키워드 기반 검색, 특정 문구를 포함하는 데이터 찾기를 제공
+    - [x] 고급 텍스트 검색: 소모임 제목과 지역을 포함한 전체 텍스트 검색 기능 제공
 
 <br>
 
-## 📊 ERD
-![erd](/profile/assets/erd.png)
 
-<br>
 
-## 🖥️ 인프라 설계도
-![infra](/profile/assets/인프라1121.png)
+## 💭 기술적 고도화
 
-<br>
-
-## 💭 기술적 의사결정
-### [✅ OtterMeet WIKI : 기술적 의사결정 바로가기](https://github.com/Gathering-Project/Gathering/wiki)
+### 기술적 의사결정  ([✅ 기술적 의사결정 WIKI 바로가기](https://github.com/Gathering-Project/Gathering/wiki))
 
 <details>
   <summary><span style="font-size:1.2em"><strong>매칭 서비스 기술적 의사결정</strong></span></summary>
@@ -275,7 +379,6 @@ OTTERMEET 🦦
   ![매칭](/profile/assets/sequence/매칭시퀀스.webp)
 
 </details>
-
 
 <details>
   <summary><span style="font-size:1.2em"><strong>채팅 서비스 기술적 의사결정</strong></span></summary>
@@ -361,8 +464,7 @@ OTTERMEET 🦦
 
 <br> 
 
-## 🚀 트러블 슈팅
-### [✅ OtterMeet WIKI : 트러블 슈팅 바로가기](https://github.com/Gathering-Project/Gathering/wiki)
+### 트러블 슈팅 ([✅ 트러블 슈팅 WIKI 바로가기](https://github.com/Gathering-Project/Gathering/wiki))
 
 
 ### 1️⃣ 매칭 서비스 고도화 트러블 슈팅
@@ -467,6 +569,131 @@ OTTERMEET 🦦
 <br>
 
 ## 💪 TEAM 같이의 가치
+
+## 📌 Ground Rule
+```
+- 외출시 슬랙에 사유 공유
+- 슬랙 수시로 확인하기
+- 의견 적극적으로 내기  
+- 절대 화내지 않기 !
+- 절대 짜증내지 않기 !
+- 절대 비난하지 않기 !
+- 반대 의견 제기시 근거와 함께 부드럽게 이야기하기
+- 자율적으로 최대한 찾아본 후 팀원들에게 질문하기
+- 질문에 짜증 금지, 겁내지 말고 자유롭게 질문 하기
+```
+
+<details>
+<summary><span style="font-size:1.4em"><strong> 💻 Code convention </strong></span></summary>
+
+<details>
+<summary><span style="font-size:1.1em"><strong> 네이밍 컨벤션 </strong></span></summary>
+
+| **항목**         | **컨벤션**                   | **예시**               |
+|------------------|-----------------------------|------------------------|
+| **클래스명**      | 파스칼 케이스               | `IAmGoodPerson`        |
+| **변수명**        | 카멜 케이스                 | `iAmGoodPerson`        |
+| **상수명**        | 어퍼 케이스                 | `I_AM_GOOD_PERSON`     |
+| **DB 테이블**     | 스네이크 케이스             | `i_am_good_person`     |
+| **DB 컬럼명**     | 스네이크 케이스             | `i_am_good_person`     |
+
+</details>
+
+<details>
+<summary><span style="font-size:1.1em"><strong> 주석 </strong></span></summary>
+
+```
+// <- 한칸 공백
+System.out.println(”Hello World!!”)
+
+/*
+* @param userId
+*......
+*
+*/ <- 컨트롤러 클래서에만 사용
+
+// <- 나머지는 해당 주석으로 정리할 것!
+```
+
+</details>
+
+<details>
+<summary><span style="font-size:1.1em"><strong> 포멧팅 </strong></span></summary>
+
+-[x] 불필요한 import문은 삭제하고 커밋
+    - MAC : Ctrl + Option + O
+    - Window : Ctrl + Alt + O
+-[x] 코드 한 번 포맷팅하고 커밋 (중괄호 등의 형식을 맞추기 위해서!)
+    - MAC : Command + option + L
+    - MAC : Command + option + L
+    - Window : Alt + Control + L
+-[x] 생성자 주입은 Lombok으로 (@Required~ @No, @All ~)
+
+</details>
+
+<details>
+<summary><span style="font-size:1.1em"><strong> API 명세서 </strong></span></summary>
+
+- /api/v1 ~
+- 계층구조 다 작성하기 ex) /groups/events/comments/{commentId}
+```
+Response 성공시(조회, 생성, 수정시 데이터 반환 / 삭제시 데이터 반환 X)
+{
+  "status": 200,
+  "message" : "정상처리 되었습니다.",
+  "data": {
+    ...
+  }
+}
+```
+```
+Response 실패시
+
+{
+  "status": 400,
+  "message" : "",
+  "data" : null
+}
+}
+```
+
+
+
+</details>
+
+</details>
+
+<details>
+<summary><span style="font-size:1.4em"><strong> 🗒️ 깃허브 규칙 </strong></span></summary>
+
+```
+- default 브랜치는 dev. 최종 제출 전날 dev에서 main으로 PR.
+- 브랜치 명 : `종류/도메인-기능` `feature/user-create`
+- 커밋 메시지 : `깃헙커밋규칙: 내용` `feat: User 생성 기능 추가`
+- PR 규칙 : 혼자서 Merge 진행 하시고 충돌 발생시 슬랙에 말씀 해 주세요
+```
+
+| **작업 타입**   | **작업 내용**                                    |
+|-----------------|-------------------------------------------------|
+| ✨ **update**   | 해당 파일에 새로운 기능이 생김                     |
+| 🎉 **add**      | 없던 파일을 생성함, 초기 세팅                     |
+| 🐛 **bugfix**   | 버그 수정                                       |
+| ♻️ **refactor** | 코드 리팩토링                                    |
+| 🩹 **fix**      | 코드 수정                                       |
+| 🚚 **move**     | 파일 옮김/정리                                   |
+| 🔥 **del**      | 기능/파일을 삭제                                 |
+| 🍻 **test**     | 테스트 코드를 작성                                |
+| 💄 **style**    | CSS 관련 작업                                   |
+| 🙈 **gitfix**   | `.gitignore` 수정                                |
+| 🔨 **script**   | `package.json` 변경 (npm 설치 등)                 |
+| 🧹 **chore**    | 그 외 자잘한 수정                                 |
+| 📜 **docs**     | 문서 수정                                       |
+
+
+</details>
+
+## **👪 Detail Role**
+
 <table>
   <thead>
     <tr>
@@ -512,7 +739,7 @@ OTTERMEET 🦦
         <img src="/profile/assets/profile/profile1.jpeg" width="100px;" alt="Profile Image"/><br/>
         <sub><b>김민주</b></sub>
       </td>
-      <td align="center">🫅🏻 Member</td>
+      <td align="center">💚 Member</td>
       <td align="left">
         - 담당 도메인 : Attachment, Chat<br/>
         - S3 기반 유저 및 소모임 이미지 등록 관리 개발<br/>
@@ -527,7 +754,7 @@ OTTERMEET 🦦
     <tr>
       <td align="center">
         <img src="/profile/assets/profile/profile2.JPG" width="100px;" alt="Profile Image"/><br/>
-        <sub><b>장민경</b></sub><td align="center">🫅🏻 Member</td>
+        <sub><b>장민경</b></sub><td align="center">💚 Member</td>
       <td align="left">
         - 담당 도메인 : Comment, Serch<br/>
         - 댓글 생성, 수정, 삭제 기능 개발<br>
@@ -539,7 +766,7 @@ OTTERMEET 🦦
     <tr>
       <td align="center">
         <img src="/profile/assets/profile/profile4.jpg" width="100px;" alt="Profile Image"/><br/>
-        <sub><b>이시우</b></sub><td align="center">🫅🏻 Member</td>
+        <sub><b>이시우</b></sub><td align="center">💚 Member</td>
       <td align="left">
         - 담당 도메인: Member, Notification <br/>
         - 멤버 가입, 조회, 삭제, 거절 및 단체 알림 기능 개발<br>
@@ -551,7 +778,7 @@ OTTERMEET 🦦
     <tr>
       <td align="center">
         <img src="/profile/assets/profile/profile3.png" width="100px;" alt="Profile Image"/><br/>
-        <sub><b>박용준</b></sub><td align="center">🫅🏻 Member</td>
+        <sub><b>박용준</b></sub><td align="center">💚 Member</td>
       <td align="left">
         - 담당 도메인 : Gathering,locations<br/>
         - 소모임 생성, 조회, 수정, 삭제 기능 개발<br/>
