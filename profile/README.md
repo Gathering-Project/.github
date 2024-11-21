@@ -310,6 +310,28 @@ CPU 사용량이 95%에 도달하며 서버 장애 위험이 매우 높다는 �
 
 　 <br>
 
+##  🖼️🧩 ERD
+
+<details>
+  <summary> ERD 명세 펼쳐보기</summary>
+
+![ERD](/profile/assets/erd.png)
+
+</details>
+
+　 <br>
+
+##  🖼️  와이어프레임
+
+<details>
+  <summary> 와이어프레임 펼쳐보기</summary>
+
+![와이어프레임](/profile/assets/와이어프레임.png)
+
+</details>
+　 
+　 <br>
+
 ## 🗯️ 주요 기능
 
 * **소모임과 이벤트 관리**
