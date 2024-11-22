@@ -833,10 +833,10 @@ Response 실패시
         <img src="/profile/assets/profile/profile2.JPG" width="100px;" alt="Profile Image"/><br/>
         <sub><b>장민경</b></sub><td align="center">💚 Member</td>
       <td align="left">
-        - 담당 도메인 : Comment, Serch<br/>
+        - 담당 도메인 : Comment, Search<br/>
         - 댓글 생성, 수정, 삭제 기능 개발<br>
         - 소모임 제목과 지역 필드에 대한 단일 및 복합 인덱스 적용<br/>
-        - ElasticSearch 한국어 데이터 색인 및 고급 검색, 연관 키워드 분석 제공
+        - ElasticSearch 한국어 데이터 색인 및 고급 검색
       </td>
       <td align="center"><a href="https://github.com/Minkyeongweb">GitHub</a></td>
     </tr>
