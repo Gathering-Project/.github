@@ -118,7 +118,7 @@ CPU 사용량이 95%에 도달하며 서버 장애 위험이 매우 높다는 �
 <br>
 
 # 🖥️ 인프라 아키텍처 & 적용기술
-![infra](/profile/assets/인프라1121.png)
+![infra](https://github.com/user-attachments/assets/df064ef7-7793-43d8-8583-78a06ebe6bcb)
 
 - 서비스는 Redis, RabbitMQ를 통해 통신하며, Docker로 컨테이너화되어 GitHub Actions 기반 CI/CD를 통해 자동 배포됩니다.
 
