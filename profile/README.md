@@ -316,7 +316,8 @@ CPU 사용량이 95%에 도달하며 서버 장애 위험이 매우 높다는 �
 <details>
   <summary> ERD 명세 펼쳐보기</summary>
 
-![ERD](/profile/assets/erd.png)
+![최종 플젝 erd](https://github.com/user-attachments/assets/4e20a895-d5bc-4982-9709-fdcba832f638)
+
 
 </details>
 
