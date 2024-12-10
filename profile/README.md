@@ -32,7 +32,7 @@ OTTERMEET 🦦
    - Redis 기반 Redisson 분산락을 활용하여 다중 요청 처리 중 데이터 무결성을 보장
    - 동시성 문제로 인한 충돌 방지와 성능 최적화를 통해 안정적인 이벤트 참가 시스템 구축
 ### 6. 운영 효율성 및 서비스 안정성 강화
-   - Docker와 GitHub Actions 기반 CI/CD 파이프라인으로 배포 자동화 및 운영 호율성 극대화
+   - Docker와 GitHub Actions 기반 CI/CD 파이프라인으로 배포 자동화 및 운영 효율성 극대화
    - Prometheus와 Grafana를 활용한 실시간 모니터링으로 시스템 성능과 안정성 확보
 
 <br> 
