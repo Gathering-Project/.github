@@ -794,7 +794,8 @@ Response 실패시
         - 유저 관리 기능 개발 (회원가입, 로그인, 탈퇴 등)<br/>
         - Spring Security 기반 인증/인가 시스템 구축<br/>
         - Kafka / RabbitMQ 활용 서버 간 메시지 큐 기반 비동기 환경 구현<br/>
-        - 필터링을 통한 1:1 유저 매칭 서비스 개발
+        - 필터링을 통한 1:1 유저 매칭 서비스 개발<br>
+        - 이벤트 내 의사 결정을 위한 투표 기능 개발
       </td>
       <td align="center"><a href="https://github.com/gyun97">GitHub</a></td>
     </tr>
